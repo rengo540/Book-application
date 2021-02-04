@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+android:layout_margin="10dp"
+    android:padding="10dp"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bookImg"
+            android:layout_width="212dp"
+            android:layout_height="107dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/imgview"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.043"
+            android:src="@drawable/book1"
+            />
+
+        <TextView
+            android:id="@+id/bookName"
+            android:layout_width="98dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/title"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bookImg"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/autharName"
+            android:layout_width="104dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/author"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bookName"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="244dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="5dp"
+
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="10dp"
+            android:numStars="5"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:scrollbarSize="10dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/autharName"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

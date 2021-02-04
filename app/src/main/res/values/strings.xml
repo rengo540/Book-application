@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">bookApp</string>
+    <string name="bookTitle">TextView</string>
+    <string name="this_book_img">this book img</string>
+    <string name="string_this_book_img" />
+    <string name="this_is_text">TextView</string>
+    <string name="desc_text_view">TextView</string>
+    <string name="fav_text_view">favourite</string>
+    <string name="remove_all">Remove All</string>
+
+    <string name="title">Title :</string>
+    <string name="description">Description :</string>
+    <string name="author">Author:</string>
+    <string name="imgview">img_view</string>
+</resources>
